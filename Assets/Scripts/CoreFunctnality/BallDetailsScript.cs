@@ -18,6 +18,8 @@ public class BallDetailsScript : MonoBehaviour
     public Vector3 center;
     [SerializeField] private LayerMask ballLayer;
     [SerializeField] private OverlapHandling overlapHandling;
+
+    [SerializeField] private BallInHand ballInHand;
     
 
 
@@ -45,6 +47,8 @@ public class BallDetailsScript : MonoBehaviour
         ballLayer = LayerMask.GetMask("ball");
         overlapHandling=transform.parent.GetComponent<OverlapHandling>();
 
+        ballInHand = FindObjectOfType<BallInHand>();
+
         
     }
 
@@ -56,6 +60,24 @@ public class BallDetailsScript : MonoBehaviour
         }
     }
 
+    private void OnMouseEnter()
+    {
+        if (gameObject.name.Contains("CueBall")) { return; }
+        if (ScriptReference.instance.mainController.isBallClickEnabled)
+        {
+            ballInHand.isBallinHand = false;
+            Debug.Log("Mouse Entered");
+        }
+    }
+    private void OnMouseExit()
+    {
+        if (gameObject.name.Contains("CueBall")) { return; }
+        if (ScriptReference.instance.mainController.isBallClickEnabled)
+        {
+            Debug.Log("Mouse Exited");
+            ballInHand.isBallinHand = true;
+        }
+    }
 
 
     private void OnMouseDown()
