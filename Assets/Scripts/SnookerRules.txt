@@ -1,0 +1,12 @@
+
+when time runs out, current selected ball points will minus
+when player dont hit any ball, current selected ball points will minus
+when player hits wrong ball, current selected ball points will minus
+
+when player pot wrong ball, potted ball points will be minus
+
+when player selected cherry, it needed to be potted, otherwise cherry points will be minus
+
+when player potted cueball, current selected ball points will be minus
+
+when player potted right ball current selected ball points will be plus

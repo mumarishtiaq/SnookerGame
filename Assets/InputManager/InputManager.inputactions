@@ -1,0 +1,82 @@
+{
+    "name": "InputManager",
+    "maps": [
+        {
+            "name": "CueStickRotation",
+            "id": "f1cddf64-a9b0-4bc2-b309-16e0fa906039",
+            "actions": [
+                {
+                    "name": "Press",
+                    "type": "Button",
+                    "id": "a79da3ed-2e9b-4802-9b83-88e2d09a631f",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Press",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Axis",
+                    "type": "Value",
+                    "id": "545dda2d-df92-4a82-b1c1-bbbd73b129fa",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "3682b9f6-f105-407c-9f0e-2764be5359c1",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Press",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "2b78c81a-7535-4409-96a1-3bc1d7261977",
+                    "path": "<Mouse>/delta",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Axis",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "BallInHand",
+            "id": "92c71a34-eefe-4332-9b12-5d8c9404efe2",
+            "actions": [
+                {
+                    "name": "ClickPressed",
+                    "type": "Button",
+                    "id": "d9ff5295-8902-4b73-8d91-7a9f8eafa723",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Press",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "d664a668-e970-4a90-ba68-857069b6d260",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ClickPressed",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}

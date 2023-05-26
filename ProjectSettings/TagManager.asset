@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Balls
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - Overlay
+  - Water
+  - UI
+  - ball
+  - DPlanner
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Overlay
+    uniqueID: 3473921255
+    locked: 0
+  - name: Default
+    uniqueID: 0
+    locked: 0
